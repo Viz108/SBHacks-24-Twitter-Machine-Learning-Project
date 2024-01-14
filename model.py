@@ -86,6 +86,10 @@ for text in text_data[:100000]:
 data["Sentiment"] = sentiment_list
 print(len(data["Sentiment"]))
 
+weekdayEncoder = LabelEncoder()
+weekdayEncoder.fit(["Negative", "Neutral", "Positive"])
+data["Sentiment"] = weekdayEncoder.transform(data['Sentiment'])
+
 
 # for sent in sentiment_list:
 #     print(sent)
