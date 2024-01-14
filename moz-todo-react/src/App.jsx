@@ -11,9 +11,9 @@ function App() {
       <div className="Inputs">
         
         <label>Day:</label>
-        <input name="Day Input" type="text"></input>
+        <input name="Day" type="text"></input>
         <label>Hour:</label>
-        <input name="Hour Input" type="number"></input>
+        <input name="Hour" type="number"></input>
         <list>
           <input name="Repost Input" value="Repost true" type="radio"></input>
           <label htmlFor="Repost true">Repost</label>
